@@ -6,9 +6,9 @@ import { formatDuration, formatPrice } from "@/components/site/ServiceCard";
 import { bookingSteps, services } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
-const title = "Online Randevu | Hazel Ağaoğlu Nail Art Studio";
+const title = "Hizmet Seçimi Önizlemesi | Hazel Ağaoğlu Nail Art Studio";
 const description =
-  "Hizmetini seç, uygun saatleri gör ve randevunu birkaç adımda online oluştur.";
+  "Hizmet seçimini deneyebileceğin tasarım önizlemesi. Gerçek randevu oluşturulmaz.";
 
 const searchSchema = z.object({
   hizmet: z.string().optional(),
@@ -38,8 +38,8 @@ function BookingPage() {
       <SectionHeading
         as="h1"
         eyebrow="Randevu"
-        title="Online randevu"
-        description="İlk adım hizmet seçimi. Uygun saatler, seçtiğin hizmetin süresine göre hesaplanır."
+        title="Hizmet seçimi önizlemesi"
+        description="Bu örnekte hizmet seçimini deneyebilirsin. Takvim, ödeme ve randevu onayı henüz kullanıma açık değildir."
       />
 
       <ol className="mt-8 flex flex-wrap gap-2" aria-label="Randevu adımları">
@@ -99,7 +99,7 @@ function BookingPage() {
         </div>
 
         <aside className="h-fit rounded-3xl border border-border bg-card p-6 shadow-[var(--shadow-atelier)] lg:sticky lg:top-28">
-          <p className="eyebrow">Randevu özeti</p>
+          <p className="eyebrow">Seçim özeti</p>
           {selected ? (
             <dl className="mt-4 space-y-3 text-sm">
               <div>
@@ -126,25 +126,24 @@ function BookingPage() {
             disabled
             className="mt-6 flex h-12 w-full items-center justify-center rounded-full bg-primary px-5 text-sm font-semibold text-primary-foreground disabled:opacity-50"
           >
-            Uygun saatleri gör
+            Takvim henüz açık değil
           </button>
           <p className="mt-3 text-xs text-muted-foreground">
-            Takvim ve saat seçimi bir sonraki aşamada devreye alınacak.
+            Bu seçim kaydedilmez ve randevu oluşturmaz. Gösterilen süreler örnektir.
           </p>
         </aside>
       </div>
 
       <PlaceholderNote>
-        Randevu oluşturma akışı (takvim, müsaitlik hesabı, çift rezervasyon
-        engeli ve onay ekranı) backend fazında tamamlanacak. Şu an yalnızca
-        hizmet seçimi çalışıyor.
+        Bu sayfa bir tasarım önizlemesidir. Yalnızca hizmet seçimi çalışır;
+        gerçek müsaitlik gösterilmez, kişisel bilgi alınmaz ve rezervasyon yapılmaz.
       </PlaceholderNote>
 
       <Link
         to="/iletisim"
         className="mt-8 inline-flex h-11 items-center rounded-full border border-border px-5 text-sm hover:bg-muted"
       >
-        Sorun mu var? Bize ulaş
+        İletişim sayfasını incele
       </Link>
     </Section>
   );
