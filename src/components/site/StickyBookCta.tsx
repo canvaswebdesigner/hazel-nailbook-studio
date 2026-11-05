@@ -13,7 +13,7 @@ export function StickyBookCta() {
         to="/randevu"
         className="flex h-[52px] items-center justify-center rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground"
       >
-        Uygun Saatleri Gör
+        Hizmet Seçimini Dene
       </Link>
     </div>
   );
