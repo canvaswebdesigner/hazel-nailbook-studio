@@ -14,9 +14,9 @@ import {
   trustPoints,
 } from "@/lib/content";
 
-const title = "Hazel Ağaoğlu Nail Art Studio | Online Randevu";
+const title = "Hazel Ağaoğlu Nail Art Studio | Tasarım Önizlemesi";
 const description =
-  "Buca İzmir'de manikür, kalıcı oje, protez tırnak ve nail art. Uygun saatleri gör, randevunu birkaç adımda online oluştur.";
+  "Nail art stüdyosu için bağımsız web tasarım önizlemesi. Hizmetleri incele ve hizmet seçimini dene; gerçek randevu oluşturulmaz.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -48,14 +48,14 @@ function HomePage() {
                 Tırnaklarında sakin, zarif ve sana ait bir detay.
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                {business.promise} Mesaj beklemeden, gerçek takvim üzerinden.
+                {business.promise} Bu bir tasarım önizlemesidir; gerçek randevu oluşturulmaz.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   to="/randevu"
                   className="inline-flex h-13 items-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
                 >
-                  Uygun Saatleri Gör
+                  Hizmet Seçimini Dene
                 </Link>
                 <Link
                   to="/hizmetler"
@@ -67,7 +67,7 @@ function HomePage() {
 
               <ul className="mt-10 grid gap-3 sm:grid-cols-3">
                 {[
-                  { icon: CalendarCheck, text: "7/24 online randevu" },
+                  { icon: CalendarCheck, text: "Hizmet seçimi önizlemesi" },
                   { icon: ShieldCheck, text: "Hijyen odaklı uygulama" },
                   { icon: Sparkles, text: "Kişiye özel tasarım" },
                 ].map(({ icon: Icon, text }) => (
@@ -98,12 +98,12 @@ function HomePage() {
       <Section className="border-y border-border bg-card">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <SectionHeading
-            eyebrow="Bugünün durumu"
-            title="En yakın uygun saatleri randevu ekranında canlı olarak görebilirsin."
-            description="Takvim gerçek doluluk üzerinden çalışır; seçtiğin saat başkasına açık kalmaz."
+            eyebrow="Önizleme durumu"
+            title="Hizmet seçimini dene; takvim henüz kullanıma açık değil."
+            description="Bu örnek gerçek müsaitlik göstermez ve rezervasyon oluşturmaz. İşletme bilgileri ve çalışma saatleri onaylanmayı bekleyen örneklerdir."
           />
           <div className="rounded-3xl border border-border bg-background p-6">
-            <p className="eyebrow mb-4">Çalışma saatleri</p>
+            <p className="eyebrow mb-4">Örnek çalışma saatleri</p>
             <ul className="grid gap-1.5 text-sm sm:grid-cols-2">
               {businessHours.map((h) => (
                 <li
@@ -119,7 +119,7 @@ function HomePage() {
               to="/randevu"
               className="mt-6 inline-flex h-11 items-center rounded-full bg-primary px-5 text-sm font-semibold text-primary-foreground"
             >
-              Randevu Al
+              Hizmet Seçimini Dene
             </Link>
           </div>
         </div>
@@ -147,7 +147,7 @@ function HomePage() {
       <Section className="bg-card">
         <SectionHeading
           eyebrow="Nasıl çalışır"
-          title="Dört adımda randevu"
+          title="Planlanan randevu adımları"
         />
         <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {bookingSteps.map((step, i) => (
@@ -231,17 +231,17 @@ function HomePage() {
       <Section>
         <div className="rounded-[2rem] border border-border bg-gradient-to-br from-[#F3E6E7] to-[#E7DBD6] p-10 text-center sm:p-16">
           <h2 className="text-balance text-3xl sm:text-4xl">
-            Uygun saatini şimdi ayırt.
+            Hizmet seçimini keşfet.
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-sm text-muted-foreground sm:text-base">
-            Randevunu oluşturduktan sonra sana özel bağlantı ile dilediğin zaman
-            görüntüleyebilir, erteleyebilir veya iptal edebilirsin.
+            Hizmetleri karşılaştırabilir ve seçim özetini görebilirsin.
+            Gerçek takvim ve randevu yönetimi bu önizlemede kullanıma açık değildir.
           </p>
           <Link
             to="/randevu"
             className="mt-8 inline-flex h-13 items-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
           >
-            Online Randevu Al
+            Hizmet Seçimini Dene
           </Link>
         </div>
       </Section>
