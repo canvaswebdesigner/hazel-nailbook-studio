@@ -47,7 +47,7 @@ export function ServiceCard({ service }: { service: Service }) {
           search={{ hizmet: service.slug }}
           className="inline-flex h-11 items-center rounded-full bg-primary px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
         >
-          Randevu Al
+          Hizmeti Seç
         </Link>
         <Link
           to="/hizmetler/$slug"
