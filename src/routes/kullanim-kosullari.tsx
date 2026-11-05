@@ -1,62 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
-
-import { Section, SectionHeading, PlaceholderNote } from "@/components/site/Layout";
-
-const title = "Kullanım Koşulları | Hazel Ağaoğlu Nail Art Studio";
-const description =
-  "Web sitesinin ve online randevu sisteminin kullanımına ilişkin koşullar.";
-
+import { Section, SectionHeading } from "@/components/site/Layout";
 export const Route = createFileRoute("/kullanim-kosullari")({
   head: () => ({
     meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
+      { title: "Demo Hakkında | Hazel Studio Demo" },
+      { name: "description", content: "Bağımsız web tasarım portföy çalışması hakkında bilgi." },
     ],
   }),
-  component: TermsPage,
+  component: InfoPage,
 });
-
-function TermsPage() {
+function InfoPage() {
   return (
     <Section>
-      <SectionHeading as="h1" eyebrow="Yasal" title="Kullanım Koşulları" />
+      <SectionHeading as="h1" eyebrow="Portföy demosu" title="Demo Hakkında" />
       <div className="mt-8 max-w-3xl space-y-6 text-sm leading-relaxed text-muted-foreground">
         <section>
-          <h2 className="text-lg text-foreground">Sitenin kullanımı</h2>
+          <h2 className="text-lg text-foreground">Çalışmanın amacı</h2>
           <p className="mt-2">
-            Bu site, stüdyo hizmetleri hakkında bilgi vermek ve online randevu
-            oluşturmayı sağlamak amacıyla sunulur. Siteyi kullanarak bu
-            koşulları kabul etmiş olursun.
+            Bu site, bir nail art stüdyosu için hazırlanan bağımsız tasarım ve kullanıcı deneyimi
+            demosudur. Tamamlanmış ücretli müşteri teslimi veya işletmenin resmi rezervasyon kanalı
+            olarak sunulmaz.
           </p>
         </section>
         <section>
-          <h2 className="text-lg text-foreground">Randevu bilgileri</h2>
+          <h2 className="text-lg text-foreground">Örnek içerik</h2>
           <p className="mt-2">
-            Randevu oluştururken verdiğin bilgilerin doğru olması gerekir.
-            Hatalı iletişim bilgisi nedeniyle ulaşılamayan randevularda
-            hatırlatma gönderilemeyebilir.
+            İşletme bilgileri, hizmet metinleri, süreler, çalışma saatleri ve görseller doğrulanmayı
+            bekleyen örneklerdir. Fiyat veya hizmet taahhüdü oluşturmaz.
           </p>
         </section>
         <section>
-          <h2 className="text-lg text-foreground">İçerik hakları</h2>
+          <h2 className="text-lg text-foreground">Deneyebileceğin özellikler</h2>
           <p className="mt-2">
-            Sitedeki görseller, metinler ve tasarım stüdyoya aittir; izinsiz
-            kullanılamaz.
-          </p>
-        </section>
-        <section>
-          <h2 className="text-lg text-foreground">Değişiklikler</h2>
-          <p className="mt-2">
-            Hizmet kapsamı, fiyatlar ve bu koşullar önceden bildirilmeksizin
-            güncellenebilir.
+            Hizmet sayfalarını, galeri filtrelerini, sık sorulan soruları ve dört adımlı randevu
+            simülasyonunu deneyebilirsin. Ödeme veya gerçek rezervasyon yapılmaz.
           </p>
         </section>
       </div>
-      <PlaceholderNote>
-        Bu metin taslaktır ve yayına alınmadan önce güncellenecektir.
-      </PlaceholderNote>
     </Section>
   );
 }

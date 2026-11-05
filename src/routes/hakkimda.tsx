@@ -52,7 +52,7 @@ function AboutPage() {
             to="/randevu"
             className="mt-10 inline-flex h-12 items-center rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
           >
-            Randevu Al
+            Randevu Demosunu Dene
           </Link>
 
           <PlaceholderNote>

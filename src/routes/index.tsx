@@ -16,7 +16,7 @@ import {
 
 const title = "Hazel Ağaoğlu Nail Art Studio | Tasarım Önizlemesi";
 const description =
-  "Nail art stüdyosu için bağımsız web tasarım önizlemesi. Hizmetleri incele ve hizmet seçimini dene; gerçek randevu oluşturulmaz.";
+  "Nail art stüdyosu için bağımsız web tasarım önizlemesi. Hizmetleri incele ve randevu demosunu dene; gerçek randevu oluşturulmaz.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -55,7 +55,7 @@ function HomePage() {
                   to="/randevu"
                   className="inline-flex h-13 items-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
                 >
-                  Hizmet Seçimini Dene
+                  Randevu Demosunu Dene
                 </Link>
                 <Link
                   to="/hizmetler"
@@ -67,14 +67,11 @@ function HomePage() {
 
               <ul className="mt-10 grid gap-3 sm:grid-cols-3">
                 {[
-                  { icon: CalendarCheck, text: "Hizmet seçimi önizlemesi" },
+                  { icon: CalendarCheck, text: "Dört adımlı randevu demosu" },
                   { icon: ShieldCheck, text: "Hijyen odaklı uygulama" },
                   { icon: Sparkles, text: "Kişiye özel tasarım" },
                 ].map(({ icon: Icon, text }) => (
-                  <li
-                    key={text}
-                    className="flex items-center gap-2 text-sm text-muted-foreground"
-                  >
+                  <li key={text} className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Icon className="size-4 shrink-0 text-primary" aria-hidden />
                     {text}
                   </li>
@@ -99,7 +96,7 @@ function HomePage() {
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <SectionHeading
             eyebrow="Önizleme durumu"
-            title="Hizmet seçimini dene; takvim henüz kullanıma açık değil."
+            title="Hizmetten sonuç ekranına kadar akışı dene."
             description="Bu örnek gerçek müsaitlik göstermez ve rezervasyon oluşturmaz. İşletme bilgileri ve çalışma saatleri onaylanmayı bekleyen örneklerdir."
           />
           <div className="rounded-3xl border border-border bg-background p-6">
@@ -119,7 +116,7 @@ function HomePage() {
               to="/randevu"
               className="mt-6 inline-flex h-11 items-center rounded-full bg-primary px-5 text-sm font-semibold text-primary-foreground"
             >
-              Hizmet Seçimini Dene
+              Randevu Demosunu Dene
             </Link>
           </div>
         </div>
@@ -145,23 +142,15 @@ function HomePage() {
       </Section>
 
       <Section className="bg-card">
-        <SectionHeading
-          eyebrow="Nasıl çalışır"
-          title="Planlanan randevu adımları"
-        />
+        <SectionHeading eyebrow="Nasıl çalışır" title="Demodaki dört adım" />
         <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {bookingSteps.map((step, i) => (
-            <li
-              key={step.title}
-              className="rounded-3xl border border-border bg-background p-6"
-            >
+            <li key={step.title} className="rounded-3xl border border-border bg-background p-6">
               <span className="font-display text-3xl text-primary">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="mt-3 text-lg">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {step.text}
-              </p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.text}</p>
             </li>
           ))}
         </ol>
@@ -187,17 +176,11 @@ function HomePage() {
       <Section className="bg-card">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
-            <SectionHeading
-              eyebrow="Hijyen"
-              title="Rahat hissetmen için net kurallar"
-            />
+            <SectionHeading eyebrow="Hijyen" title="Rahat hissetmen için net kurallar" />
             <ul className="mt-8 space-y-4">
               {trustPoints.map((point) => (
                 <li key={point.title} className="flex gap-3">
-                  <ShieldCheck
-                    className="mt-0.5 size-5 shrink-0 text-primary"
-                    aria-hidden
-                  />
+                  <ShieldCheck className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
                   <div>
                     <p className="font-medium">{point.title}</p>
                     <p className="text-sm text-muted-foreground">{point.text}</p>
@@ -230,18 +213,16 @@ function HomePage() {
 
       <Section>
         <div className="rounded-[2rem] border border-border bg-gradient-to-br from-[#F3E6E7] to-[#E7DBD6] p-10 text-center sm:p-16">
-          <h2 className="text-balance text-3xl sm:text-4xl">
-            Hizmet seçimini keşfet.
-          </h2>
+          <h2 className="text-balance text-3xl sm:text-4xl">Randevu deneyimini keşfet.</h2>
           <p className="mx-auto mt-4 max-w-lg text-sm text-muted-foreground sm:text-base">
-            Hizmetleri karşılaştırabilir ve seçim özetini görebilirsin.
-            Gerçek takvim ve randevu yönetimi bu önizlemede kullanıma açık değildir.
+            Hizmetini, örnek tarih ve saatini seç; demo sonuç ekranını gör. Gerçek rezervasyon
+            yapılmaz ve hiçbir mesaj gönderilmez.
           </p>
           <Link
             to="/randevu"
             className="mt-8 inline-flex h-13 items-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
           >
-            Hizmet Seçimini Dene
+            Randevu Demosunu Dene
           </Link>
         </div>
       </Section>

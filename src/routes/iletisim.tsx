@@ -6,7 +6,7 @@ import { business, businessHours } from "@/lib/content";
 
 const title = "İletişim | Hazel Ağaoğlu Nail Art Studio";
 const description =
-  "Stüdyo konumu, çalışma saatleri ve iletişim kanalları. Randevu için online takvimi kullanabilirsin.";
+  "Örnek iletişim sayfası. Gerçek işletme iletişim bilgileri henüz doğrulanmamıştır.";
 
 export const Route = createFileRoute("/iletisim")({
   head: () => ({
@@ -27,7 +27,7 @@ function ContactPage() {
         as="h1"
         eyebrow="İletişim"
         title="Bize ulaş"
-        description="Randevu oluşturmak için online takvimi kullanman en hızlı yol. Diğer sorular için aşağıdaki kanallardan yazabilirsin."
+        description="Bu sayfa iletişim düzenini gösterir. Telefon, adres ve sosyal medya bilgileri henüz doğrulanmamıştır. Randevu akışını demo olarak deneyebilirsin."
       />
 
       <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -41,28 +41,17 @@ function ContactPage() {
               </div>
             </li>
             <li className="flex items-start gap-3">
-              <MessageCircle
-                className="mt-0.5 size-5 shrink-0 text-primary"
-                aria-hidden
-              />
+              <MessageCircle className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
               <div>
                 <p className="font-medium">Telefon / WhatsApp</p>
                 <p className="text-muted-foreground">{business.phoneDisplay}</p>
               </div>
             </li>
             <li className="flex items-start gap-3">
-              <Instagram
-                className="mt-0.5 size-5 shrink-0 text-primary"
-                aria-hidden
-              />
+              <Instagram className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
               <div>
                 <p className="font-medium">Instagram</p>
-                <a
-                  href={business.instagramUrl}
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Profili gör
-                </a>
+                <span className="text-muted-foreground">Instagram bilgisi henüz eklenmedi</span>
               </div>
             </li>
           </ul>
@@ -71,12 +60,12 @@ function ContactPage() {
             to="/randevu"
             className="mt-8 inline-flex h-12 items-center rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground"
           >
-            Online Randevu Al
+            Randevu Demosunu Dene
           </Link>
         </div>
 
         <div className="rounded-3xl border border-border bg-card p-6">
-          <p className="eyebrow mb-4">Çalışma saatleri</p>
+          <p className="eyebrow mb-4">Örnek çalışma saatleri</p>
           <ul className="text-sm">
             {businessHours.map((h) => (
               <li
@@ -99,8 +88,7 @@ function ContactPage() {
       </div>
 
       <PlaceholderNote>
-        İletişim formu, mesajların güvenli şekilde kaydedilmesi için backend
-        aşamasında devreye alınacak.
+        Bu portföy demosu iletişim formu içermez ve mesaj göndermez.
       </PlaceholderNote>
     </Section>
   );

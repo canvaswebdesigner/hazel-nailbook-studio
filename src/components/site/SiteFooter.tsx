@@ -19,7 +19,7 @@ export function SiteFooter() {
               to="/randevu"
               className="mt-5 inline-flex h-11 items-center rounded-full bg-primary px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
             >
-              Hizmet Seçimini Dene
+              Randevu Demosunu Dene
             </Link>
           </div>
 
@@ -66,12 +66,7 @@ export function SiteFooter() {
               </li>
               <li className="flex items-start gap-2">
                 <Instagram className="mt-0.5 size-4 shrink-0" aria-hidden />
-                <a
-                  href={business.instagramUrl}
-                  className="transition-colors hover:text-foreground"
-                >
-                  Instagram
-                </a>
+                <span>Instagram bilgisi henüz eklenmedi</span>
               </li>
             </ul>
           </div>

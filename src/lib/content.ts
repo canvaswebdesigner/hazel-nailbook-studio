@@ -12,8 +12,7 @@ export const business = {
   name: "Hazel Ağaoğlu Nail Art Studio",
   shortName: "Hazel Ağaoğlu",
   tagline: "Güzellik detaylarda saklı.",
-  promise:
-    "Hizmetleri incele ve sana uygun seçeneği keşfet.",
+  promise: "Hizmetleri incele ve sana uygun seçeneği keşfet.",
   /** PLACEHOLDER */
   address: "Buca, İzmir (adres bilgisi yakında eklenecek)",
   /** PLACEHOLDER */
@@ -197,7 +196,7 @@ export const faqItems: FaqItem[] = [
     id: "f2",
     question: "Randevumu nasıl iptal ederim veya değiştiririm?",
     answer:
-      "Bu önizlemede randevu oluşturulmadığı için iptal veya değişiklik yapılamaz. Randevu yönetimi henüz kullanıma açık değildir.",
+      "Demo sırasında Geri düğmesiyle seçimlerini değiştirebilir veya sonuç ekranından yeniden başlayabilirsin. Gerçek randevu oluşturulmaz.",
     category: "randevu",
   },
   {
@@ -225,7 +224,7 @@ export const faqItems: FaqItem[] = [
     id: "f6",
     question: "Ne kadar önceden randevu almalıyım?",
     answer:
-      "Bu önizlemede gerçek müsaitlik bilgisi bulunmuyor. Takvim ve rezervasyon sistemi henüz kullanıma açık değildir.",
+      "Demoda yarından itibaren 14 günlük örnek takvim gösterilir. Bu tarihler gerçek işletme müsaitliğini yansıtmaz.",
     category: "randevu",
   },
 ];
@@ -239,16 +238,16 @@ export const bookingSteps = [
     text: "Hizmet seçimini deneyebilirsin. Süreler örnektir; fiyatlar henüz doğrulanmamıştır.",
   },
   {
-    title: "Takvim (planlanıyor)",
-    text: "Gerçek müsaitlik takvimi henüz kullanıma açık değildir.",
+    title: "Örnek saat seç",
+    text: "Örnek tarih ve saatlerden hizmet süresine uygun bir seçim yap.",
   },
   {
-    title: "İletişim (planlanıyor)",
-    text: "Bu önizleme kişisel bilgi toplamaz ve kaydetmez.",
+    title: "Bilgileri incele",
+    text: "Hazır deneme bilgilerini incele; kişisel bilgi girmene gerek yok.",
   },
   {
-    title: "Onay (planlanıyor)",
-    text: "Bu önizlemede rezervasyon veya randevu onayı oluşturulmaz.",
+    title: "Demoyu tamamla",
+    text: "Sonuç ekranını gör. Gerçek rezervasyon, ödeme veya mesaj oluşturulmaz.",
   },
 ];
 
