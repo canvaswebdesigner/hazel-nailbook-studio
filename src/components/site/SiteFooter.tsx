@@ -19,7 +19,7 @@ export function SiteFooter() {
               to="/randevu"
               className="mt-5 inline-flex h-11 items-center rounded-full bg-primary px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
             >
-              Online Randevu Al
+              Hizmet Seçimini Dene
             </Link>
           </div>
 
@@ -40,7 +40,7 @@ export function SiteFooter() {
           </nav>
 
           <div>
-            <p className="eyebrow mb-4">Çalışma Saatleri</p>
+            <p className="eyebrow mb-4">Örnek Çalışma Saatleri</p>
             <ul className="space-y-1.5 text-sm text-muted-foreground">
               {businessHours.map((h) => (
                 <li key={h.day} className="flex justify-between gap-4">
