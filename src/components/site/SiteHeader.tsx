@@ -51,7 +51,7 @@ export function SiteHeader() {
               to="/randevu"
               className="ml-1 hidden h-11 items-center rounded-full bg-primary px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-hover sm:inline-flex"
             >
-              Online Randevu Al
+              Hizmet Seçimini Dene
             </Link>
 
             <button
@@ -92,7 +92,7 @@ export function SiteHeader() {
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex h-12 items-center justify-center rounded-full bg-primary px-5 text-sm font-semibold text-primary-foreground"
             >
-              Online Randevu Al
+              Hizmet Seçimini Dene
             </Link>
           </nav>
         </Container>
