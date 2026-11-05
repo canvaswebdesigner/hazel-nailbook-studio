@@ -13,7 +13,7 @@ export const business = {
   shortName: "Hazel Ağaoğlu",
   tagline: "Güzellik detaylarda saklı.",
   promise:
-    "Hizmetini seç, uygun saatini gör ve randevunu birkaç adımda oluştur.",
+    "Hizmetleri incele ve sana uygun seçeneği keşfet.",
   /** PLACEHOLDER */
   address: "Buca, İzmir (adres bilgisi yakında eklenecek)",
   /** PLACEHOLDER */
@@ -190,14 +190,14 @@ export const faqItems: FaqItem[] = [
     id: "f1",
     question: "Randevu almadan gelebilir miyim?",
     answer:
-      "Stüdyo randevu ile çalışıyor. Online randevu ekranından uygun saatleri görebilir ve mesaj beklemeden yerini ayırtabilirsin.",
+      "Bu site bir tasarım önizlemesidir ve randevu kabul etmez. Gerçek çalışma düzeni ve iletişim bilgileri işletme tarafından doğrulanmalıdır.",
     category: "randevu",
   },
   {
     id: "f2",
     question: "Randevumu nasıl iptal ederim veya değiştiririm?",
     answer:
-      "Randevunu oluşturduğunda sana özel bir randevu bağlantısı verilir. Bu bağlantıdan randevunu görüntüleyebilir, iptal edebilir veya erteleyebilirsin.",
+      "Bu önizlemede randevu oluşturulmadığı için iptal veya değişiklik yapılamaz. Randevu yönetimi henüz kullanıma açık değildir.",
     category: "randevu",
   },
   {
@@ -225,7 +225,7 @@ export const faqItems: FaqItem[] = [
     id: "f6",
     question: "Ne kadar önceden randevu almalıyım?",
     answer:
-      "Yoğunluk dönemsel olarak değişiyor. En yakın uygun saatleri randevu ekranında canlı olarak görebilirsin.",
+      "Bu önizlemede gerçek müsaitlik bilgisi bulunmuyor. Takvim ve rezervasyon sistemi henüz kullanıma açık değildir.",
     category: "randevu",
   },
 ];
@@ -236,19 +236,19 @@ export const testimonials: { id: string; name: string; text: string }[] = [];
 export const bookingSteps = [
   {
     title: "Hizmetini seç",
-    text: "Süre ve fiyat bilgisiyle birlikte sana uygun hizmeti belirle.",
+    text: "Hizmet seçimini deneyebilirsin. Süreler örnektir; fiyatlar henüz doğrulanmamıştır.",
   },
   {
-    title: "Uygun saati gör",
-    text: "Gerçek takvim üzerinden boş saatleri anında görüntüle.",
+    title: "Takvim (planlanıyor)",
+    text: "Gerçek müsaitlik takvimi henüz kullanıma açık değildir.",
   },
   {
-    title: "Bilgilerini bırak",
-    text: "İsim ve iletişim bilgin yeterli; hesap oluşturmana gerek yok.",
+    title: "İletişim (planlanıyor)",
+    text: "Bu önizleme kişisel bilgi toplamaz ve kaydetmez.",
   },
   {
-    title: "Randevun hazır",
-    text: "Randevu özetini ve sana özel yönetim bağlantısını hemen al.",
+    title: "Onay (planlanıyor)",
+    text: "Bu önizlemede rezervasyon veya randevu onayı oluşturulmaz.",
   },
 ];
 
