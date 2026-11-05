@@ -138,6 +138,9 @@ function RootComponent() {
       </a>
       <div className="flex min-h-screen flex-col bg-background">
         <SiteHeader />
+        <p className="border-b border-border bg-muted px-5 py-3 text-center text-sm text-foreground">
+          Tasarım önizlemesi · Gerçek randevu oluşturulmaz. İşletme bilgileri, süreler ve görseller örnektir.
+        </p>
         <main id="main" className="flex-1 pb-20 sm:pb-0">
           {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />
